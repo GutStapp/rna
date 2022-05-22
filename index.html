@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+ <html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Running .NET in Azure (RNA)</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!--Color Switcher Mockup-->
+<link href="css/color-switcher-design.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	<!-- Header span -->
+
+    <!-- Header Span -->
+    <span class="header-span"></span>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-two">
+        <div class="main-box">
+            <div class="auto-container clearfix">
+                <div class="logo-box">
+                    <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+                </div>
+
+                <!--Nav Box-->
+                <div class="nav-outer clearfix">
+                    <!--Mobile Navigation Toggler-->
+                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="navbar-header">
+                            <!-- Togg le Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon flaticon-menu-button"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                                <li class="current"><a href="index.html">Home</a></li>
+                                <li class="current"><a href="#speakers">Prelegenci</a></li>
+                                <li class="current"><a href="#agenda">Agenda</a></li>
+                                <li class="current"><a href="#sponsors">Sponsorzy</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
+
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+    </header>
+    <!--End Main Header -->
+
+    <!-- Banner Conference -->
+    <section class="banner-conference">
+
+		<!-- Icons -->
+		<div class="icons parallax-scene-1">
+			<!-- Icon One -->
+			<div data-depth="0.20" class="icon-one parallax-layer" style="background-image:url(images/icons/icon-1.png)"></div>
+			<!-- Icon Two -->
+			<div data-depth="0.50" class="icon-two parallax-layer" style="background-image:url(images/icons/icon-2.png)"></div>
+			<!-- Icon Three -->
+			<div data-depth="0.10" class="icon-three parallax-layer" style="background-image:url(images/icons/icon-3.png)"></div>
+			<!-- Icon Four -->
+			<div data-depth="0.30" class="icon-four parallax-layer" style="background-image:url(images/icons/icon-4.png)"></div>
+			<!-- Icon Five -->
+			<div data-depth="0.10" class="icon-five parallax-layer" style="background-image:url(images/icons/icon-5.png)"></div>
+			<!-- Icon Six -->
+			<div data-depth="0.20" class="icon-six parallax-layer" style="background-image:url(images/icons/icon-6.png)"></div>
+			<!-- Icon Seven -->
+			<div data-depth="0.10" class="icon-seven parallax-layer" style="background-image:url(images/icons/icon-7.png)"></div>
+			<!-- Icon One -->
+			<div data-depth="0.20" class="icon-eight parallax-layer" style="background-image:url(images/icons/icon-1.png)"></div>
+			<!-- Icon Two -->
+			<div data-depth="0.50" class="icon-nine parallax-layer" style="background-image:url(images/icons/icon-8.png)"></div>
+			<!-- Icon Three -->
+			<div data-depth="0.10" class="icon-ten parallax-layer" style="background-image:url(images/icons/icon-3.png)"></div>
+			<!-- Icon Four -->
+			<div data-depth="0.30" class="icon-eleven parallax-layer" style="background-image:url(images/icons/icon-4.png)"></div>
+			<!-- Icon Five -->
+			<div data-depth="0.10" class="icon-twelve parallax-layer" style="background-image:url(images/icons/icon-5.png)"></div>
+			<!-- Icon Six -->
+			<div data-depth="0.20" class="icon-thirteen parallax-layer" style="background-image:url(images/icons/icon-6.png)"></div>
+			<!-- Icon Seven -->
+			<div data-depth="0.10" class="icon-fourteen parallax-layer" style="background-image:url(images/icons/icon-7.png)"></div>
+		</div>
+
+        <div class="layer-outer">
+            <div class="gradient-layer"></div>
+        </div>
+
+        <div class="images-outer">
+            <figure class="speaker-img"><img src="images/main-slider/speaker.png" alt=""></figure>
+        </div>
+
+        <div class="anim-icons full-width">
+            <span class="icon icon-circle-3 wow zoomIn"></span>
+            <span class="icon icon-dots wow zoomIn"></span>
+        </div>
+
+        <div class="auto-container">
+            <div class="content-box">
+                <span class="title">9 czerwca, 2022</span>
+                <h2> Running .NET <br> in Azure (RNA)</h2>
+                <div class="time-counter"><div class="time-countdown clearfix" data-countdown="06/09/2022"></div></div>
+                <div class="btn-box"><a href="https://rna.konfeo.com/" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Zarejestruj się</span></a></div>
+            </div>
+        </div>
+    </section>
+    <!--End Banner Conference -->
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="auto-container">
+            <!-- <div class="anim-icons">
+                <span class="icon icon-shape-3 wow fadeIn"></span>
+                <span class="icon icon-line-1 wow fadeIn"></span>
+            </div> -->
+
+            <div class="row">
+                <!-- Feature Block -->
+                <div class="feature-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-search"></span></div>
+                        <h4><a href="#">Świetni prelegenci</a></h4>
+                        <div class="text">Wybitni eksperci od .NET i Azure.</div>
+                    </div>
+                </div>
+
+                <!-- Feature Block -->
+                <div class="feature-block col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-diamond-1"></span></div>
+                        <h4><a href="#">Sesje</a></h4>
+                        <div class="text">Sesje pełne wartościowych treści zdobytych w boju</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Features Section -->
+
+    <!-- Speakers Section -->
+    <section class="speakers-section-two" id="speakers">
+        <div class="anim-icons">
+            <span class="icon icon-circle-4 wow zoomIn"></span>
+            <span class="icon icon-circle-3 wow zoomIn"></span>
+        </div>
+
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="title">O to nasi</span>
+                <h2>Prelegenci</h2>
+            </div>
+
+            <div class="row">
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Oskar Dudycz</h4>
+                            <span class="designation">Event Sorcerer</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/od.jpg" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Radosław Maziarka</h4>
+                            <span class="designation">Solution Architect i Engineering Manager w obszarze Azure</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/rm.jpg" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Paweł Piwowarczyk</h4>
+                            <span class="designation">Senior Software Engineer w Allegro Pay</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/pp.jpg" alt=""><</figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Maciej Misztal</h4>
+                            <span class="designation">Cloud Architect w Allegro Pay</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/mm.png" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Jakub Dropia</h4>
+                            <span class="designation">Team Leader w Allegro Pay</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/jd.jpg" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">Kamil Starczak</h4>
+                            <span class="designation">Senior Software Engineer w Allegro Pay</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/speakers/ks.jpg" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="info-box">
+                            <h4 class="name">XXX</h4>
+                            <span class="designation">XXX</span>
+                        </div>
+                        <div class="image-box">
+                            <figure class="image"><img src="images/resource/speaker-7.jpg" alt=""></figure>
+                        </div>
+                        <!-- <div class="social-box">
+                            <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Speakers Section -->
+
+    <!-- Schedule Section Style two -->
+    <section class="schedule-section " id="agenda">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="title">Rozkład jazdy</span>
+                <h2>Agenda</h2>
+            </div>
+
+            <div class="schedule-tabs tabs-box">
+                <div class="btns-box">
+                    <!--Tabs Box-->
+                    <ul class="tab-buttons clearfix">
+                        <li class="tab-btn active-btn" data-tab="#tab-1">
+                            <span class="day">Konferencja</span>
+                            <span class="date">09</span>
+                            <span class="month">CZE</span> 2022
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="tabs-content">
+
+                    <!--Tab-->
+                    <div class="tab active-tab" id="tab-1">
+                        <div class="schedule-timeline">
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">9.45 - 10.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Organizatorzy</h5>
+                                        </div>
+                                        <h4>Rozpoczęcie konferencji</h4>
+                                        <div class="text">Kilka słów wstępu na temat konferencji i planu dnia.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- schedule Block -->
+                            <div class="schedule-block  even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">10.00 - 11.00 AM</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/speakers/od.jpg" alt=""></figure>
+                                            <h5 class="name">Oskar Dudycz</h5>
+                                            <!-- <span class="designation">Founder & CEO</span> -->
+                                        </div>
+                                        <h4>Marten, czyli pragmatyczny Event Sourcing w .NET</h4>
+                                        <div class="text">Event Sourcing przedstawiany jest jako ciekawy, ale akademicki i trudny w implementacji wzorzec. Marten idzie w poprzek tego stwierdzenia, pokazując pragmatyczne spojrzenie. Na swojej prelekcji pokażę jak w praktyce połączyć przeciwieństwa, czyli Event Sourcing, bazę relacyjną. Zrobimy na żywo prostą, ale pełną aplikację w .NET 6 pokazując, że nie taki ten Event Sourcing straszny.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">11.00 - 12.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/speakers/mm.png" alt=""></figure>
+                                            <h5 class="name">Maciej Misztal</h5>
+                                            <span class="designation">Cloud Architect w Allegro Pay</span>
+                                        </div>
+                                        <h4>DevOps WarStories II</h4>
+                                        <div class="text">Opowieści z pola bitwy, z perspektywy małego zespołu z impact'em na cały projekt. Zwycięstwa, porażki, awarie i fakapy, ale też odpowiedzi na pytania: jak wprowadzać globalne zmiany w organizacji bez powodowania downtime'u oraz czego się nauczyliśmy przez ostatni rok i w jaką stronę zmierzamy?</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                             <!-- schedule Block -->
+                             <div class="schedule-block  even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">12.00 - 13.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Organizatorzy</h5>
+                                            <!-- <span class="designation">Founder & CEO</span> -->
+                                        </div>
+                                        <h4>Przerwa obiadowa</h4>
+                                        <div class="text">Szybka przerwa obiadowa!</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">13.00 - 14.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/speakers/pp.jpg" alt=""></figure>
+                                            <h5 class="name">Paweł Piwowarczyk</h5>
+                                            <span class="designation">Senior Software Engineer w Allegro Pay</span>
+                                        </div>
+                                        <h4>Przygody i kompromisy z NoSQL w świecie Cosmos DB</h4>
+                                        <div class="text">Obietnica baz NoSQL, z jej elastycznością modelu danych zamiast silnych schematów kusi. Jak każda technologia bazodanowa rozwiązuje pewne problemy wprowadzając cały zbiór innych - kompromisy są wszędzie. Na przykładzie najpopularniejszej bazy NoSQL w chmurze Azure - Cosmos DB - chciałbym opowiedzieć Wam kilka historii z życia wziętych, które obrazują pewne kompromisy, pułapki i codzienne problemy.
+<br/><br/>
+                                            Jak strukturyzować dane przy pomocy partycji? Jak używać transakcji? Jak i po co zmieniać oraz aktualizować model rekordów? Jak i po co migrować dane do nowych kolekcji? Jak nie używać indeksów? Jak analizować koszty i je estymować? Jak rozwiązywać problemy w dostarczanym przez MS SDK? Jak zrobić audyt (wersje) danych? Jak zrealizować outbox pattern? Zapraszam do wspólnej przygody w Cosmosie.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <!-- schedule Block -->
+                            <div class="schedule-block  even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">14.00 - 15.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/speakers/jd.jpg" alt=""></figure>
+                                            <figure class="thumb"><img src="images/speakers/ks.jpg" alt=""></figure>
+                                            <h5 class="name">Jakub Dropia, Kamil Starczak</h5>
+                                            <!-- <span class="designation">Senior Software Engineer w Allegro Pay</span> -->
+                                        </div>
+                                        <h4>Azure Service Bus - Live with or without you?</h4>
+                                        <div class="text">Azure Service Bus to kolejka, która przetwarza setki wiadomości na sekundę w Allegro Pay. Razem z firmą Microsoft przeprowadziliśmy wiele testów, badań i ćwiczeń, aby dowiedzieć się jak najwięcej na jej temat i wypracować najlepsze rekomendacje dla przyszłych funkcjonalności i optymalizacji. I oczywiście zdecydować czy to technologia dla nas. Oprócz tego, mamy nasze SDK tzw. “wrapper”, który jest abstrakcją ułatwiającą użycie Azure Service Bus dla naszych nowych serwisów, zdarzeń i komend. W tej prezentacji chcielibyśmy podzielić się z Wami zarówno naszymi odkryciami, jak i użyciem usługi Azure Service Bus w naszym produkcie.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">15.00 - 16.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">XXX</h5>
+                                            <span class="designation">XXX</span>
+                                        </div>
+                                        <h4>XXX</h4>
+                                        <div class="text">XXX</div>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <!-- schedule Block -->
+                            <div class="schedule-block  even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <div class="date">16.00 - 17.00</div>
+                                        <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/speakers/rm.jpg" alt=""></figure>
+                                            <h5 class="name">Radosław Maziarka</h5>
+                                            <span class="designation">Solution Architect i Engineering Manager w obszarze Azure</span>
+                                        </div>
+                                        <h4>Modelowanie biznesowe w Cosmos DB</h4>
+                                        <div class="text">Cosmos DB to baza, która jest bardzo mocno promowana przez Microsoft. Jednocześnie jest ona postrzegana jako droga baza. Jest to jednocześnie prawda i nieprawda. Prawda, bo rozwiązanie wdrożone jako kopia rozwiązania z baz SQL skończy się zawałem serca dyrektora finansowego. Nieprawda, bo odpowiednie podejście pozwala znacznie obniżyć koszt i cieszyć się bardzo wydajnie skalującym się rozwiązaniem.
+<br/><br/>
+                                            Na prezentacji chciałbym wam pokazać jak na konkretnym przykładzie biznesowym (ogólnopolska wypożyczalnia rowerów) przygotować propozycje rozwiązania, wdrożyć wybrane i wyliczyć ich koszt. A na koncu przedstawić sposoby monitorowania bazy danych.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End schedule Section -->
+
+    <!-- Pricing Section -->
+    <section class="pricing-section-two">
+        <div class="anim-icons">
+            <span class="icon icon-line-1 wow zoomIn"></span>
+            <span class="icon icon-circle-1 wow zoomIn"></span>
+            <span class="icon icon-dots wow zoomIn"></span>
+        </div>
+
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="title">100% DARMOWE</span>
+                <h2>Bilety</h2>
+            </div>
+
+            <div class="outer-box">
+                <div class="row">
+
+                    <!-- Pricing Block -->
+                    <div class="pricing-block-two offset-4 col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="inner-box">
+                            <div class="title"><span class="icon flaticon-movie-tickets"></span> VIP</div>
+                            <div class="price-box">
+                                <h4 class="price">0.00 PLN</h4>
+                            </div>
+                            <ul class="features">
+                                <li class="true">VIPowskie miejsce w pierwszym rzędzie</li>
+                                <li class="true">Dostęp do nagrań z konferencji</li>
+                                <li class="true">Maksymalna przyjemność oglądania (ty wybierasz gdzie)</li>
+                            </ul>
+                            <div class="btn-box">
+                                <a href="https://rna.konfeo.com/" target="_blank" class="theme-btn btn-style-one"><span class="btn-title">Zarejestruj się!</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Pricing Section -->
+
+     <!--Clients Section-->
+     <section class="clients-section"id="sponsors">
+        <div class="anim-icons">
+            <span class="icon icon-dots-3 wow zoomIn"></span>
+            <span class="icon icon-circle-blue wow zoomIn"></span>
+        </div>
+        <div class="auto-container">
+            <div class="sec-title">
+                <span class="title">nasi</span>
+                <h2>Sponsorzy</h2>
+            </div>
+
+            <div class="sponsors-outer">
+                <h3>Platynowi</h3>
+                <div class="row">
+                    <!-- Client Block -->
+                    <div class="client-block col-lg-3 col-md-6 col-sm-12">
+                        <figure class="image-box" ><a href="https://allegro.pl/metody-platnosci/allegro-pay" target="_blank"><img style="max-width: 100%;" src="images/clients/ap.png" alt="Allegro Pay"></a></figure>
+                    </div>
+
+                    
+                    <div class="client-block col-lg-3 col-md-6 col-sm-12">
+                        <figure class="image-box" ><a href="https://allegro.pl" target="_blank"><img src="images/clients/a.png" style="max-width: 100%;" alt="Allegro"></a></figure>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sponsors-outer">
+                <h3>Medialni</h3>
+
+                <div class="row">
+                    <!-- Client Block -->
+                    <div class="client-block col-lg-3 col-md-6 col-sm-12">
+                        <figure class="image-box"><a href="https://devWarsztaty.pl" target="_blank"><img src="images/clients/dw.jpg" alt="devWarsztaty"></a></figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Clients Section-->
+
+    <!-- Main Footer -->
+    <footer class="main-footer style-two">
+        <div class="auto-container">
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <!-- <div class="footer-logo"><a href="#"><img src="images/logo.png" alt=""></a></div> -->
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#speakers">Prelegenci</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#sponsors">Sponsorzy</a></li>
+                </ul>
+                <div class="copyright-text">© Copyright 2022 All Rights Reserved by <a href="https://gutstapp.com" target="_blank">Gutkowski-Stapp S.K.A.</a></div>
+                <!-- <ul class="social-icon-one">
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-pinterest"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+<!--End pagewrapper-->
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
